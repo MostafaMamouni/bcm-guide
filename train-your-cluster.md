@@ -37,7 +37,7 @@ after having a typical HPC cluster as well as a deep understading of all the adm
 
 create 3 users, give them nice names ;), and two groups, `gpuproject-gp`, `cpuproject-gp`. each group
 should have only one user. `gpuproject-gp` group have an exclusive access to the directory `/projects/gpuproject`,
-`cpuproject-gp` group have an exclusive access to the directory `/projects/cpuprojects`, still one user without a group!, let it alone :D. make sure of those last things by trying to access the directories with users don't the access rights.
+`cpuproject-gp` group have an exclusive access to the directory `/projects/cpuprojects`, still one user without a group!, let it alone :D. make sure of those last things by trying to access the directories with users don't have the access rights.
 
 turn-in: the output of, `cmsh -c "user; ls"`, `cmsh -c "group; ls"`, `ls -l /projects/gpuproject`
 , `ls -l /project/cpuproject`, use the command `id` on each user and send the output.
