@@ -19,7 +19,7 @@ most of the HCP clusters now have loging nodes, the users can access the cluster
 them as well as submit jobs from, login nodes have small changes in thier configuration concerning networking, system and slurm (pay attention to this one) that distinguish them from the compute nodes and the headnode.
 
 turn-in: a dicription about what distinguishes a login node from other types of nodes, you can
-send its network configuration files, the configuration file of `slurmd`, the ouput of `cmsh -c "device; use headnodename; roles; ls `, the output of the `systemctl status slurmctld`, `systemctl status slurmd`, `systemctl status slurmdbd` you can guesse where those command should executed, also a summary of what you have observed.
+send its network configuration files, the configuration file of `slurmd`, the ouput of `cmsh -c "device; use headnodename; roles; ls `, the output of the `systemctl status slurmctld`, `systemctl status slurmd`, `systemctl status slurmdbd` you can guesse where those command should be executed, also a summary of what you have observed.
 the documention is your friend.
 
 ## **3 compute nodes**
