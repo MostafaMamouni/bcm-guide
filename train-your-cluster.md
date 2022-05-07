@@ -9,7 +9,7 @@ set up an hpc cluster with the following configuration.
 turn-in : a full technical discription about, how the headnode is different from the other 
 nodes, system services, network configuration, users/groups management, resources mangement. 
 send the text discription as well as network configuration files, slurm configuration files 
-of its demons (slurmctld, slurmdbd, slurmd), the output of `systemctl status *service*`, \*service\* is demon that just is running only in headnode. all the system sercies should be
+of its demons (slurmctld, slurmdbd, slurmd), the output of `systemctl status *service*`, \*service\* is demon that is running only in headnode. all the system sercies should be
 running fine.
 check bcm and slurm documentations
 
