@@ -39,18 +39,23 @@ check [this](https://github.com/MostafaMamouni/bcm-guide/blob/main/bcm%20install
     - resources management: set up slurm following **7.3 Installation Of Workload Managers** section in [BCM documentation](https://support.brightcomputing.com/manuals/9.1/admin-manual.pdf). the headnode should have *slurm-server* and *slurm-submit* roles, the
     login node should have only *slurm-submit* role, the rest of the compute nodes should
     have only *slurm-client*.
+    - Add a login node that has two network interfaces one is connected to the
+    internet the other one is connected to the private network of the cluster
+    - Add 3 compute nodes that have only one network interface which is connected to the
+    private network of the cluster.
 
-advanced usage/features should about adding an InfinitBand network and configure [bmc](https://www.techtarget.com/searchnetworking/definition/baseboard-management-controller), custumizing system images to deploy, and to set up other services like clouding and kubernetes.
+advanced usage/features should be about adding an InfinitBand network and configure [bmc](https://www.techtarget.com/searchnetworking/definition/baseboard-management-controller)
+custumizing system images to deploy, and how to set up other services like clouding and 
+kubernetes and other tools.
 
 ## Users and groups management (1 day)
 
 **prerequisites**: a good understading of linux systems as well as the networking.
 
-In order for a user (not root) to submit a job be using slurm, the user itself should be recognized among all the compute nodes, therefore we need to add the user on those nodes with
-exactly the same credentials, which is again not practical.
+In order for a user (not root) to submit a job by using slurm for example, the user itself
+should be recognized among all the compute nodes, therefore we need to add the user on those nodes with exactly the same credentials, which is again not practical.
 
-Brieflly, to solve this problem we need to have a centralized database of users and groups using
-[OpenLDAP](https://www.openldap.org/) then share the information of the users and groups
+Brieflly, to solve this problem we need to have a centralized database of users and groups using [OpenLDAP](https://www.openldap.org/) then share the information of the users and groups
 among the other nodes by using [sssd](https://sssd.io/).
 
 **tasks**
