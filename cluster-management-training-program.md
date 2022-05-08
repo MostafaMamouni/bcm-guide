@@ -102,7 +102,7 @@ these jobqueue rules should be applied and working as intended, read carfully ht
 In general, HPC clusters are using system monitoring tools such as grafana, ganglia etc ...
 to keep track on the physical state of the devices, network state and the resources usage.
 There is also [NHC](https://github.com/mej/nhc) that is great for automatically detect
-failures within the different services in the system, storage and workload mangers.
+failures within the different services in the system, storage and workload managers.
 
 Maintenance is up to the administrator and how he or she likes to handle things in the cluster
 but it is highly recommended to back up the OS image of the headnode (backup point)
