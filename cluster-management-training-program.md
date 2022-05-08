@@ -97,6 +97,23 @@ use one node for each submit.
 
 these jobqueue rules should be applied and working as intended, read carefully https://slurm.schedmd.com/slurm.conf.html and your slurm configuration file, as well as BCM documention about the subject.
 
+## Installing and testing compilers & packages (2 days)
+
+The objective of this part is to install and test different versions of compilers and packages.
+
+**tasks**
+
+- Install and test: 
+
+  - GCC compiler for different version using easybuid
+  - Different versions of Python, R, Anaconda, ...
+  - Different MPI versions
+  - Scientific packages OpenFoam, OpenModelica, ...
+  - Visualization tools; Paraview, VTK, ...
+  - Profiling tools; Valgrind, Vtune, ..
+
+- See examples here: https://github.com/HPC-Simlab/Tutorials
+
 ## Maintenance
 
 In general, HPC clusters are using system monitoring tools such as grafana, ganglia etc ...
