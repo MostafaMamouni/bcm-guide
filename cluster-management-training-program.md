@@ -1,4 +1,4 @@
-# Introduction to system administration of HPC clusters
+<h1 align="center" style="color:#8A2BE2"> Introduction to system administration of HPC clusters </h1>
 
 The objectif of this training is to explain an HPC cluster as a concept and use Bright Cluster Manager
 for a demonstration since it is the fastest way to build an HPC cluster and start practicing
@@ -14,7 +14,16 @@ In this training we won't discuss how to set up a physical cluster but we will m
 
 To manage an HPC cluster, it is necessary to understand the following parts:
 
-## Deployment (2 days)
+## Tables of Contents
+
+* [Deployment (2 days)](#1)
+* [Users and groups management (1 day)](#2)
+* [Resources management with slurm (2 days)](#3)
+* [Installing and testing compilers & packages (2 days)](#4)
+* [Maintenance](#5)
+
+
+### `Deployment` (2 days) <a name="1"></a>
 
 **prerequisites**: a good understanding of linux systems as well as the networking.
 
@@ -48,7 +57,7 @@ advanced usage/features should be about adding an InfinitBand network and config
 custumizing system images to deploy, and how to set up other services like clouding and 
 kubernetes and other tools.
 
-## Users and groups management (1 day)
+## `Users and groups management` (1 day) <a name="2"></a>
 
 **prerequisites**: a good understanding of linux systems as well as the networking.
 
@@ -73,7 +82,7 @@ To simulate a real life scenario,
 
 check **6.1 Managing Users And Groups With Bright View** section in [BCM documentation](https://support.brightcomputing.com/manuals/9.1/).
 
-## Resources management with slurm (2 days)
+## `Resources management with slurm` (2 days) <a name="3"></a>
 
 In order to organize usage of the available resources in an HPC cluster, a workload manager
 should be installed and configured, and the users should learn how to use it so they can submit
@@ -96,8 +105,8 @@ use one node for each submit.
 - cpuq: only `cpuproject-gp` group members are allowed to run their jobs in, 2 hours as a time limi, just one node for each submit.
 
 these jobqueue rules should be applied and working as intended, read carefully https://slurm.schedmd.com/slurm.conf.html and your slurm configuration file, as well as BCM documention about the subject.
-
-## Installing and testing compilers & packages (2 days)
+ 
+##  `Installing and testing compilers & packages (2 days)` <a name="4"></a>
 
 The objective of this part is to install and test different versions of compilers and packages.
 
@@ -114,7 +123,7 @@ The objective of this part is to install and test different versions of compiler
 
 - See examples here: https://github.com/HPC-Simlab/Tutorials
 
-## Maintenance
+## `Maintenance` <a name="5"></a>
 
 In general, HPC clusters are using system monitoring tools such as grafana, ganglia etc ...
 to keep track on the physical state of the devices, network state and the resources usage.
