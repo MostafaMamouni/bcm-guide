@@ -1,6 +1,6 @@
 # Introduction to system administration of HPC clusters
 
-Out aim in this training is to explain an HPC cluster as a concept and use Bright Cluster Manager
+The objectif of this training is to explain an HPC cluster as a concept and use Bright Cluster Manager
 for a demonstration since it is the fastest way to build an HPC cluster and start practicing
 the administrating of the cluster, then if you don't will to work with Bright Cluster Manager
 you can migrate to open source tools, but it is important to understand very well all the aspects
@@ -75,7 +75,7 @@ check **6.1 Managing Users And Groups With Bright View** section in [BCM documen
 
 ## Resources management with slurm (2 days)
 
-In order to organize usage of the available resources in an HPC cluster, a workload manager]
+In order to organize usage of the available resources in an HPC cluster, a workload manager
 should be installed and configured, and the users should learn how to use it so they can submit
 their job on the cluster.
 
