@@ -135,7 +135,7 @@ but it is highly recommended to back up the OS image of the headnode (backup poi
 and any important configuration file as well as users data (storage), develop scripts for repeated tasks and never stop reading/trying different technologies concerning the HPC clusters.
 
 I hope that this training was helpful to have a basic understanding of how HPC clusters work,
-you can always extend you knowledge by reading articles about the subject plus the
+you can always extend your knowledge by reading articles about the subject plus the
 documentation of services or the software that you are using to manage your cluster.
 
 Thank you!
